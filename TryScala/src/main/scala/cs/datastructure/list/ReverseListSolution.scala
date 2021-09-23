@@ -1,4 +1,4 @@
-package com.rock.datastructure.list
+package cs.datastructure.list
 
 /**
  * https://segmentfault.com/a/1190000037518253

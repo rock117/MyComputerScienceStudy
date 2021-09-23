@@ -1,4 +1,4 @@
-package com.rock.datastructure.list
+package cs.datastructure.list
 
 //import org.scalatest.FunSuite
 import org.scalacheck.Properties

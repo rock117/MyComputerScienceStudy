@@ -1,7 +1,6 @@
-package com.rock
+package cs
 
-import com.rock.nat.Nat
-
+ 
 
 object Main extends App {
 //  val (n1:Nat, n2:Nat) = (Nat.fromInt(12).get, Nat.fromInt(10).get)

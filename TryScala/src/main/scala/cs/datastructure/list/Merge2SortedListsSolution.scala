@@ -1,4 +1,4 @@
-package com.rock.datastructure.list
+package cs.datastructure.list
 
 /**
  * 合并2个有序列表

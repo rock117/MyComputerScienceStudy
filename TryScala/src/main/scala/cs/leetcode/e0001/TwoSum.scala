@@ -1,4 +1,4 @@
-package com.rock.leetcode.e0001
+package cs.leetcode.e0001
 
 /**
  * https://books.halfrost.com/leetcode/ChapterFour/0001~0099/0001.Two-Sum/

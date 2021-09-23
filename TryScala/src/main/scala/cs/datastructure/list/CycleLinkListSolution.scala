@@ -1,4 +1,4 @@
-package com.rock.datastructure.list
+package cs.datastructure.list
 
 /**
  * 判断链表有环

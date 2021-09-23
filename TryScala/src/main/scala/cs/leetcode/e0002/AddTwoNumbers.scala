@@ -1,4 +1,4 @@
-package com.rock.leetcode.e0002
+package cs.leetcode.e0002
 
 /**
  * https://books.halfrost.com/leetcode/ChapterFour/0001~0099/0002.Add-Two-Numbers/
