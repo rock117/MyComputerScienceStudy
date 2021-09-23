@@ -2,3 +2,5 @@
 /TryScala/.idea/
 /TryScala/project/target/
 /TryScala/target/
+/TryRust/target/
+/TryRust/Cargo.lock
