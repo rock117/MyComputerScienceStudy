@@ -4,3 +4,5 @@
 /TryScala/target/
 /TryRust/target/
 /TryRust/Cargo.lock
+/.stack-work/
+/stack.yaml.lock
