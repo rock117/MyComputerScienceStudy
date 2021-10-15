@@ -20,3 +20,6 @@ val BlockingFileIO = ExecutionContext.fromExecutor(Executors.newCachedThreadPool
 object CatsMain extends IOApp.Simple {
   override def run: IO[Unit] = IO{println("hello world ooo")}.void
 }
+
+import cats._, cats.data._, cats.syntax.all._
+val s1 = State[String, Int] {s => (s, 1)}
