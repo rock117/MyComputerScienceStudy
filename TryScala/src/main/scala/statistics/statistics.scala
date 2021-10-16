@@ -28,5 +28,5 @@ def standardDeviation(datas: Array[Int]): Double = {
 
 @main
 def main(): Unit ={
-    println(geometricMean(Array(3,3)))
+    println(geometricMean(Array(3, 3)))
 }
