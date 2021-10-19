@@ -17,6 +17,17 @@ object FS2Main extends IOApp.Simple {
       .through(Files[IO].writeAll(Path("D:\\coding\\code\\my\\kt-test\\build.gradle.kts2")))
   }
 
-  def run: IO[Unit] =
-    converter.compile.drain
+  val toUpper: Stream[IO, Unit] = {
+
+
+    Files[IO].readAll(Path("C:\\data\\DNALab\\uu.txt"))
+      .through(text.utf8.decode)
+      .through(text.lines)
+      .map(line => line.toUpperCase())
+      .intersperse("\n")
+      .through(text.utf8.encode)
+      .through(Files[IO].writeAll(Path("C:\\data\\DNALab\\user.txt")))
+  }
+  def run: IO[Unit] = toUpper.compile.drain >> IO{println("DONE")}
+
 }
