@@ -16,6 +16,13 @@ import cs.datastructure.sort.Sort
  * 3. 将每个区间载入内存排序，排好序后，按照写入文件(文件按桶编号命名)
  * 4. 按照编号文件读取文件，再合并到最终文件
  */
-class BucketSort extends LinearSort{
+class BucketSort(bucketNum: Int) extends LinearSort{
     override def sort(arr: Array[Int]): Unit = ???
+    private def createBucket(): Unit ={
+
+    }
+    private def combineBucket(): Unit ={
+
+    }
+
 }
