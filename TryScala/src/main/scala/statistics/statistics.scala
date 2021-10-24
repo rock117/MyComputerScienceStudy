@@ -17,13 +17,14 @@ def geometricMean(datas: Array[Int]): Double = Math.pow(datas.product, 1.toDoubl
 
 /**
  * 标准差，均方差
+ * (各个数与平均数的差)的平方
  * @param datas
  * @return
  */
 def standardDeviation(datas: Array[Int]): Double = {
     val avg:Double = datas.sum / datas.length.toDouble
-    val r = datas.map(e => (e - avg) * (e - avg)).sum / datas.length
-    Math.pow(r, 1/2)
+    val r = datas.map(e => (e - avg) * (e - avg)).sum / datas.length 
+    Math.pow(r, 1/2) // 平方根
 }
 
 @main

@@ -22,6 +22,21 @@ class SortTest {
         sort.sort(arr)
         println(arr.mkString(","))
     }
+
+    @Test
+    def testSelectionSort(): Unit ={
+        val arr = Array(4,3,2,1,0)
+        val sort = SelectionSort()
+        sort.sort(arr)
+        println(arr.mkString(","))
+    }
+
+    @Test
+    def testMergeSort(): Unit ={
+        val s = 1 :: 2 :: Nil
+      //  new MergeSort().sort(arr)
+        println(s)
+    }
 }
 
 
