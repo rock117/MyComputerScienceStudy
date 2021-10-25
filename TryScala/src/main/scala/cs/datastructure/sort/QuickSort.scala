@@ -1,6 +1,7 @@
 package cs.datastructure.sort
 
 /**
+ * 快速排序
  * 时间复杂度 O(nlogn)
  * 最坏情况: O(n2), 数据已经是有序，且哨兵每次都选最后一个元素时
  * 空间复杂度 O(logn), 最坏情况 O(n)
@@ -10,6 +11,9 @@ package cs.datastructure.sort
  *    在这个分区退出之后，该基准就处于数列的中间位置。这个称为分区（partition）操作；
  * 3. 递归地（recursive）把小于基准值元素的子数列和大于基准值元素的子数列排序；
  *
+ * 为了避免 O(n2), 挑选数据时，可以随机取一个数据；或者从 数据头，数据中，数据尾中选中间大的数作为目标值，
+ * 如果数组长度比较大，则可选 5, 7, 9 ..个数，取值大小是中间的作为目标值
+ * 
  * https://www.runoob.com/w3cnote/quick-sort-2.html
  */
 class QuickSort {
