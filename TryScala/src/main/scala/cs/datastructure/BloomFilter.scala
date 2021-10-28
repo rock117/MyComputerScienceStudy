@@ -25,8 +25,15 @@ package cs.datastructure
  *  如何扩容
  *  如何删除
  */
-class BloomFilter[T](hashes: List[Hash[T]]) {
-    def cache: Array[Boolean] = ??? // 位图
+class BloomFilter[T](hashes: List[Hash[T]], bitNum:Int) {
+    val cache: Array[Boolean] = Array.fill(bitNum)(false) // 位图
+
+    def add(t: T): Unit = {
+        hashes.foreach{ hash =>
+            cache(hash(t)) = true
+        }
+    }
+
     def notContains(t: T): Boolean = {
         // 所有hash code 对应的下标，至少有一个为 false
         hashes.map(hash => cache(hash(t))).find(e => e == false).isDefined

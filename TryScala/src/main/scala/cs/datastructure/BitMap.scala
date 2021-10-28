@@ -24,24 +24,34 @@ package cs.datastructure
  *
  */
 class BitMap {
-    def cache: Array[Boolean] = Array.fill(8)(false) // 内部比特位表示
+    val cache: Array[Boolean] = Array.fill(8)(false) // 内部比特位表示
     /**
      * Solution: 将 第 n 位比特 置1
      * @param n
      */
-    def set(n: Int): Unit = cache(n) = true
+    def set(n: Int): Unit = {
+        cache(n) = true
+    }
 
     /**
      *  Solution: 判断第 n 位 比特是否是 1
      * @param n
      * @return
      */
-    def contains(n: Int): Boolean = cache(n)
+    def contains(n: Int): Boolean = {
+        cache(n)
+    }
+
+    def filterExistElementIndex():List[Int] = cache.zipWithIndex.filter((e, i) => e).map((e, i) => i).toList
+
 }
 object BitMap {
     def sort(arr: Array[Int]): Array[Int] = {
         val newArr = List.empty[Int]
-
-        newArr.toArray
+        val bitMap = BitMap()
+        arr.foreach(e => bitMap.set(e))
+        bitMap.filterExistElementIndex().toArray
     }
 }
+
+ 
