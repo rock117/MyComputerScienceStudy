@@ -3,7 +3,9 @@ package cs.datastructure.sort
 import scala.util.control.Breaks
 
 /**
- * 时间复杂度 O(n2)
+ * 冒泡排序
+ * 稳定性: 稳定
+ * 时间复杂度 O(n2),如果是已排好序，则是O(n)
  */
 class BubbleSort extends Sort{
     def sort(arr: Array[Int]):Unit = {

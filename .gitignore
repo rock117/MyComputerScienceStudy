@@ -6,3 +6,5 @@
 /TryRust/Cargo.lock
 /.stack-work/
 /stack.yaml.lock
+/TryRust/.idea/
+/TryScala/project/project/
